@@ -18,12 +18,22 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'Poppins', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				brand: {
+					cream: 'hsl(var(--brand-cream))',
+					'cream-dark': 'hsl(var(--brand-cream-dark))',
+					'cream-light': 'hsl(var(--brand-cream-light))',
+					text: 'hsl(var(--brand-text))',
+					'text-soft': 'hsl(var(--brand-text-soft))',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
