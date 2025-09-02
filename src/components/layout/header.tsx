@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const Header = () => {
   return (
@@ -11,17 +12,20 @@ const Header = () => {
       className="w-full px-4 py-6 md:px-8 lg:px-12"
     >
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        {/* Logo placeholder */}
+        {/* Logo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex-shrink-0"
         >
-          <img 
-            src="/logovinecas.jpg" 
-            alt="Vinecas Personalizados Logo" 
-            className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover"
+          <Image
+            src="/logovinecas.jpg" // coloque sua imagem dentro da pasta public/
+            alt="Vinecas Personalizados Logo"
+            width={80}
+            height={80}
+            className="rounded-lg object-cover w-16 h-16 md:w-20 md:h-20"
+            priority
           />
         </motion.div>
 
