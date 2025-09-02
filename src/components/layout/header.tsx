@@ -23,7 +23,7 @@ const Header = () => {
           <img 
             src={logo} 
             alt="Logotipo da Vinecas Personalizados" 
-            className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover shadow-soft"
+            className="w-26 h-26 md:w-20 md:h-20 rounded-lg object-cover shadow-soft"
           />
         </motion.div>
 
@@ -34,7 +34,8 @@ const Header = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex-1 text-center md:text-right ml-4"
         >
-          <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-text tracking-tight">
+          {/* As classes de tamanho do texto foram ajustadas aqui */}
+          <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-brand-text tracking-tight">
             VINECAS
             <br className="block md:hidden" />
             <span className="ml-0 md:ml-4">PERSONALIZADOS</span>
