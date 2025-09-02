@@ -18,9 +18,11 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex-shrink-0"
         >
-          <div className="w-16 h-16 md:w-20 md:h-20 bg-muted rounded-lg flex items-center justify-center shadow-soft">
-            <span className="text-sm md:text-base font-medium text-muted-foreground">Logo</span>
-          </div>
+          <img 
+            src="/logovinecas.jpg" 
+            alt="Vinecas Personalizados Logo" 
+            className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover"
+          />
         </motion.div>
 
         {/* Title */}
